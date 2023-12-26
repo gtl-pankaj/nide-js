@@ -1,1 +1,3 @@
-console.log('welcome');
+const val = require('./wolf.js');
+
+console.log(val);
