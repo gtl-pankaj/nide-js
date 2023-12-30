@@ -12,9 +12,13 @@ app.get('/profile',(req, res) => {
         name : "Pankaj",
         email:"pankaj@gmail.com",
         contact:1234567890,
+        skills:["php","js","node"],
     }
     res.render('profile',{user:user});
 })
+app.get('/login',(req, res) => {
+    res.render('login',);
+});
 app.get('/about',(req, res) => {
     res.sendFile(`${dirPath}/about.html`);
 })
